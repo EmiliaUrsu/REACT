@@ -1,0 +1,19 @@
+<script>
+    const processOrder = ( {quantity, price:{amount}} ) => {
+   let cost = quantity * amount
+   return cost
+}
+
+//----------------------------------
+
+const order = {
+    quantity: 10,
+    price : {
+       amount: 100,
+       currency: "EUR"
+    }
+}
+
+
+let totalCost = processOrder(order)
+</script>
